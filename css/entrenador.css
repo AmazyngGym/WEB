@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+.holaentre{
+	height: 100vh;
+	background-image: url('../images/entrenador1.jpg');
+	background-size: cover;
+	padding:15px;
+	-webkit-display: flex;
+	display: flex;
+	position: relative;
+}
+.holaentre .go-down{
+  position: absolute;
+  bottom: 50px;
+  width: 26px;
+  height:40px;
+  border:1px solid #ffffff;
+  display: block;
+  border-radius:4px;
+  text-align: center;
+  left:50%;
+  margin-left: -13px;
+}
+.holaentre .go-down .fa{
+	color:#ffffff;
+	-webkit-animation: goDown 1s ease infinite;
+	animation: goDown 1s ease infinite;
+}
+@-webkit-keyframes goDown{
+	0%{transform: translateY(0);opacity:.5}
+	100%{transform: translateY(10px);}
+}
+@keyframes goDown{
+	0%{transform: translateY(0);opacity:.5}
+	100%{transform: translateY(10px);}
+}
+.holaentre .container{
+  -webkit-display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.holaentre h1{
+	color:#ffffff;
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin:0;
+}
+
+.holaentre p {
+	color:#ffffff;
+	text-align: justify;
+	font-family: 'Oswald', sans-serif;
+}
+
+.holaentre h1 span{
+	color:#F43E0A;
+}
+
+/*sesion uno de experiencia*/
+.entrenador{
+	padding:80px 0px;
+	background-color: white;
+}
+
+.entrenador2{
+	padding:80px 0px;
+	background-color: black;
+}
+.entrenador .content{
+	-webkit-display: flex;
+	display: flex;
+}
+
+.entrenador .content .box{
+	flex:0 0 50%;
+	max-width: 50%;
+	padding: 15px;
+}
+
+
+.image-row {
+	display: grid;
+	grid-row: 2fr;
+	grid-template-columns: 1fr 1fr;
+	object-fit: cover;
+	gap:5px;
+}
+
+.image-column {
+	grid-row: span 2;
+}
+
+.image-column-full {
+	grid-row: span 2;
+}
+
+
+.image-columns {
+	grid-column: 1 / span 2; 
+	grid-row: 2 / span 1;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.entrenador-info {
+	font-family: Arial, sans-serif;
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 20px;
+	margin: 0 auto;
+  }
+  .entrenador-info h2 {
+	color: white;
+	font-family: 'Oswald', sans-serif;
+  }
+  .entrenador-info p {
+	color: white;
+	font-family: 'Oswald', sans-serif;
+  }
+  .entrenador-info{
+	background-color: black;
+  }
+.entrenador .content .form input,
+.entrenador .content .form textarea{
+ height: 45px;
+ width: 100%;
+ padding:6px 12px;
+ margin-bottom: 25px;
+ background-color: transparent;
+ border:1px solid #ffffff;
+ font-family: 'Open-sans',sans-serif;
+ color:#ffffff;
+}
+.entrenador .content .form input:focus,
+.entrenador .content .form textarea:focus{
+ outline: none;
+}
+.entrenador .content .form input::placeholder,
+.entrenador .content .form textarea::placeholder{
+	color:#ffffff;
+}
+.entrenador .content .form textarea{
+	height: 100px;
+}
+
+.entrenador .content .form button{
+	border:none;
+	outline: none;
+	box-shadow: none;
+	height: 45px;
+	padding:0px 50px;
+	border:1px solid transparent;
+	background-color: #F43E0A;
+	color:#ffffff;
+	font-size: 15px;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+.entrenador .content .form button:hover{
+	background-color:transparent;
+	color:#ffffff; 
+    border-color:#ffffff;
+}
+
+.entrenador .content .text h2{
+	font-size: 30px;
+    font-weight: 500;
+    color: #F43E0A;
+    padding: 0px 0px 20px;
+}
+
+.entrenador .content .text p{
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+    margin: 0;
+    padding: 0px 0px 30px;
+    font-family: 'Open-sans', sans-serif;
+	text-align: justify;
+}
+
+.entrenador .content .text .parrafo2{
+	line-height: 30px;
+	color:white;
+	font-family: 'Oswald', sans-serif;
+}
+
+.entrenador .content .text .info ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+.entrenador .content .text .info li{
+	display: block;
+	margin-bottom: 15px;
+	color:#ffffff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	position: relative;
+	padding-left: 40px;
+	font-family: 'Open-Sans',sans-serif;
+}
+.entrenador .content .text .info li span{
+	display: inline-block;
+	position: absolute;
+	left:0px;
+	top:0px;
+	font-size: 20px;
+	color:#F43E0A;
+}
+.entrenador .content .text .social {
+	padding-top: 30px;
+}
+.entrenador .content .text .social a{
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #F43E0A;
+    text-decoration: none;	
+    display: inline-block;
+    margin-right: 10px;
+    transition: all .5s ease;
+    border:1px solid transparent;
+} 
+
+.entrenador .content .text .social a:hover{
+	background-color: transparent;
+    border-color: #ffffff;
+}
+
+.entrenador .content .text .social a span{
+	color:#ffffff;
+	font-size: 20px;
+}
+
+.entrenador .content .text .copy{
+	border-top:1px solid #ece6e6;
+	margin-top: 30px;
+	padding-top: 20px;
+	color:#c5c5c5;
+	font-size: 15px;
+}
+
+  
